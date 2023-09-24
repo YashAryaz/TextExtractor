@@ -26,7 +26,7 @@ pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 Run the script using Python:
 
 ```bash
-python your_script_name.py
+python main.py
 ```
 
 The Gradio interface will launch, allowing you to upload an image or PDF file.
