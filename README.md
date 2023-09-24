@@ -13,6 +13,25 @@ Before running the script, make sure you have the following dependencies install
 
 You can install them using pip:
 
-```bash
+``` bash
 pip install gradio opencv-python-headless pytesseract numpy PyPDF2
+```
+
+# Tesseract Configuration
+You need to specify the path to the Tesseract executable on your system. Modify the pytesseract.pytesseract.tesseract_cmd variable to point to the correct path. Example:
+```bash
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+```
+# Usage
+Run the script using Python:
+
+```bash
+python your_script_name.py
+```
+
+The Gradio interface will launch, allowing you to upload an image or PDF file.
+
+Once you upload a file, the script will process it and extract text.
+
+The extracted text will be displayed on the web interface.
 
